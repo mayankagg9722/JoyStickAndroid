@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mayankaggarwal.joystick.ShowActivity">
+    
+    <com.example.mayankaggarwal.joystick.MainActivity
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        custom:JV_buttonColor="#FF6E40"
+        custom:JV_borderColor="#00796B"
+        custom:JV_backgroundColor="#009688"
+        custom:JV_borderWidth="4dp"
+        custom:JV_fixedCenter="false"
+        android:id="@+id/myjoystick"/>
+</RelativeLayout>
