@@ -11,6 +11,7 @@ public class ShowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
 
+
         MainActivity joystick = (MainActivity) findViewById(R.id.myjoystick);
         joystick.setOnMoveListener(new MainActivity.OnMoveListener() {
             @Override
