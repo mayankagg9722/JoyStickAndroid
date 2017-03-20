@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mayankaggarwal.joystick.ShowActivity"
-    android:background="#8057e1">
+    android:background="#523c87">
 
     <com.example.mayankaggarwal.joystick.CustomLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/loda"/>
 
     <com.example.mayankaggarwal.joystick.MainActivity

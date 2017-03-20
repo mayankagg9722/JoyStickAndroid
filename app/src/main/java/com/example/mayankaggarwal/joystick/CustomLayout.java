@@ -37,28 +37,71 @@ public class CustomLayout extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+//        Log.d("tagg", String.valueOf(canvas.getWidth()+" "+canvas.getHeight()));
         myLayout=new Paint();
-        myLayout.setColor(Color.parseColor("#523c87"));
+        myLayout.setColor(Color.parseColor("#8057e1"));
         myLayout.setAntiAlias(true);
         myLayout.setStyle(Paint.Style.FILL);
-//        Log.d("tagg", String.valueOf(canvas.getWidth()+" "+canvas.getHeight()));
-        canvas.drawCircle(canvas.getWidth()-120, canvas.getHeight(), (canvas.getHeight()-70), myLayout);
+
+        paint = new Paint();
+
+        paint.setStyle(Paint.Style.STROKE);
+        path = new Path();
+
+//**********############ NORMAL DRWAING #########*************************
 
 
-        //**********############BEIZER CURVE#########*************************
+//        canvas.drawCircle(canvas.getWidth()-120, canvas.getHeight(), (canvas.getHeight()-70), myLayout);
+//        canvas.drawLine(0,400,canvas.getWidth(),200,myLayout);
 
-//        paint = new Paint();
-//
-//        paint.setStyle(Paint.Style.STROKE);
-//        path = new Path();
-//        paint.setColor(Color.RED);
-//        paint.setStrokeWidth(700);
-//        path.moveTo(0,0);
-////        path.cubicTo(68, 151, 286, 350, 336, 252);
-////        path.quadTo(0,600,canvas.getWidth(),300);
-//
-//        path.quadTo(0,0,canvas.getWidth(),300);
+//**********############ NORMAL DRWAING #########*************************
+
+
+//**********############BEIZER CURVE#########*************************
+
+
+//        paint.setStyle(Paint.Style.FILL);
+//        paint.setColor(Color.parseColor("#8057e1"));
+//        path.moveTo(0,400);
+//        path.quadTo(0,0,canvas.getWidth(),200);
 //        canvas.drawPath(path, paint);
+
+//**********############BEIZER CURVE#########*************************
+
+
+
+
+
+//**********############ CUSTOM SHAPE #########*************************
+
+        //custom drawing shape on canvas
+
+        //give border color
+        Paint mBoarderPaint = new Paint();
+        mBoarderPaint.setAntiAlias(true);
+        mBoarderPaint.setColor(Color.BLACK);
+        mBoarderPaint.setStyle(Paint.Style.STROKE);
+        mBoarderPaint.setStrokeWidth(6);
+
+        //give inner shape color
+        Paint mInnerPaint = new Paint();
+        mInnerPaint.setAntiAlias(true);
+        mInnerPaint.setColor(Color.parseColor("#8057e1"));
+        mInnerPaint.setStyle(Paint.Style.FILL);
+        mInnerPaint.setStrokeJoin(Paint.Join.ROUND);
+
+        path.moveTo(0,0);
+        path.lineTo(0, 400);
+        path.lineTo(getWidth(),200);
+        path.lineTo(getWidth(), 0);
+        path.lineTo(0, 0);
+        canvas.drawPath(path, mInnerPaint);
+
+
+//**********############ CUSTOM SHAPE #########*************************
+
+
+
 
     }
 }
