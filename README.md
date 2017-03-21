@@ -1,6 +1,6 @@
 # JoyStickAndroid
 Use Joystick on phone to control QuadCopter or IoT based Car. <br/> Bézier curve is also used for designing custom layouts or background on canvas.
-
+![alt tag](https://github.com/mayankagg9722/JoyStickAndroid/blob/master/joystick.gif)
 ![alt tag](https://github.com/mayankagg9722/JoyStickAndroid/blob/master/joystick.png)
 ![alt tag](https://github.com/mayankagg9722/JoyStickAndroid/blob/master/joystickone.png)
 
